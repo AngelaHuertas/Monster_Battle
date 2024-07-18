@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utl-8" />
+        <title>Moster Battle</title>
+
+    </head>
+    <body>
+        <h1>Mouster Battle</h1>
+
+        <section id="seleccionarMascota">
+            <h2>Elige tu mascota: </h2>
+            <input type="radio" name="mascota" id= "Aerogon" />
+            <label for="Aerogon">Aerogon 🌪️</label> <br>
+
+            <input type="radio" name="mascota" id= "Infernochar" />
+            <label for="Infernochar">Infernochar 🔥</label> <br>
+
+            <input type="radio" name="mascota" id= "Aquatide" />
+            <label for="Aquatide">Aquatide 💧</label> <br>
+
+            <input type="radio" name="mascota" id= "Terradon" />
+            <label for="Terradon">Terradon 🌱</label> <br>
+            
+
+            <button id="mascotas">Seleccionar</button>
+
+        <script>
+        //Aerogon -> Aire
+        //Infernochar -> Fuego
+        //Aquatide -> Agua
+        //Terradon -> Tierra
+        //Zephyreon -> Aire y Fuego
+        //Pyroblaze -> Fuego y Tierra
+        //Hydrospire ->  Agua y Aire
+        //Georift -> Tierra y Agua
+        </script>
+
+        </section>
+
+        <section id="seleccionar_ataque">
+            <h2>Elige tu ataque: </h2>
+
+            <P>Tú mascota <span id="MascotaJugador"></span> tiene <span>3</span> vidas</P>
+            <p><span id="MascotaEnemiga"></span>, mascota del enemigo tiene <span>3</span> vidas</p>
+       
+        </section>
+        
+             <!-- Botones de ataques -->
+            <section id="ataquesDeAire" style="display: none;">
+                <button id="ataqueDeAire1">Tornado Cortante 🌪️</button> 
+                <button id="ataqueDeAire2">Remolino Veloz 🍃</button>
+                <button id="ataqueDeAire3">Ventisca Cortante 🪭</button>
+                <button id="ataqueDeAire4">Siroco Abrasador 🌬️</button>    
+            </section>
+        
+            <section id="ataquesDeFuego" style="display: none;">
+                <button id="ataqueDeFuego1">Llamarada Solar 🔥</button> 
+                <button id="ataqueDeFuego2">Estallido Ígneo 💥</button>
+                <button id="ataqueDeFuego3">Fogonazo Fulgurante ♨️</button>
+                <button id="ataqueDeFuego4">Inferno Ardiente 😈</button>    
+            </section>
+        
+            <section id="ataquesDeAgua" style="display: none;">
+                <button id="ataqueDeAgua1">Tsunami Furioso 🌊</button> 
+                <button id="ataqueDeAgua2">Marejada Congelante 🧊</button>
+                <button id="ataqueDeAgua3">Hidroesfera Aplastante ♒</button>
+                <button id="ataqueDeAgua4">Cascada Impetuosa 🚿</button>
+            </section>
+        
+            <section id="ataquesDeTierra" style="display: none;">
+                <button id="ataqueDeTierra1">Terremoto Telúrico 🫨</button> 
+                <button id="ataqueDeTierra2">Avalancha Rocosa 🗻</button>
+                <button id="ataqueDeTierra3">Ruptura Sísmica ⛰️</button>
+                <button id="ataqueDeTierra4">Hedor Fétido 🌄</button>    
+            </section>
+
+    <section id="mensajes">
+            <script>
+            //<p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - ¡¡¡GANASTE!!!🏆</p>
+            </script>
+        </section>
+
+        <section id="reiniciar">
+            <button>Reiniciar</button>
+        </section>
+
+        <script src="./Monster_Battle.js"></script>
+
+    </body>
+</html>
+
